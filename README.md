@@ -15,6 +15,24 @@ After all data is entered, the program displays:
 • Highest and lowest grade per subject: Identifies the top and bottom performing scores for each individual subject.
 • Formatted summary table: Displays every student's grades alongside their final average in a clean, readable layout.
 
+SAMPLE OUTPUT
+Class total: 465.0
+Class average: 77.5
+
+Average grade per student:
+Alice - Average Grade: 80.0 | Class average: 77.5
+Bob - Average Grade: 75.0 | Class average: 77.5
+
+Highest and lowest grade per subject:
+Math - Highest: 80.0 | Lowest: 60.0
+English - Highest: 90.0 | Lowest: 75.0
+Science - Highest: 90.0 | Lowest: 70.0
+
+Student Name    | Math     | English  | Science  | Average
+-----------------------------------------------------------
+Alice           | 80.0     | 90.0     | 70.0     | 80.00
+Bob             | 60.0     | 75.0     | 90.0     | 75.00
+
 Section A+B Data Structure:
 Section A+B starts with the students and subjects variables assigned to lists in order to cater for mutability and editing during insertion of values. As the code progress the list is appended to a multi datatype tuple to avoid changing of data values once the values are stored.
 
