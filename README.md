@@ -4,7 +4,7 @@ StudentID: bida25-482
 Module: Introduction to Python
 Assignment component: Section A-C
 
-<bold>Section A:Data entry and validation</bold>
+<bold>Section A: Data entry and validation</bold>
 The user is required to insert the number of students and it should be greater than 0. The program will reiterate the student names and grades the amount of times that equate to each student. The input for the student names and cannot be null.
 Each grade is validated and must be a number that lies between 0 and 100. Invalid entries are rejected with a message and the question is repeated.
 
