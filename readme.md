@@ -46,4 +46,14 @@ Why a dictionary:
 
 To prevent errors when the user enters the wrong data type or an unexpected value, the code uses `try` and `except ValueError` blocks. These make sure the user enters valid input.
 
-An example of where this is enforced is in the `get_valid_grade` function. 
+An example of where this is enforced is in the `get_valid_grade` function. Thee code snippet is here:
+def get_valid_grade(student_name, subject):
+    """function to get a validated grade from the user."""
+    while True:
+        try:
+            grade = float(input(f"Enter {student_name}'s grade for {subject} (0-100): "))
+            if 0 <= grade <= 100:
+                return grade
+            print("Grade must be between 0 and 100.")
+        except ValueError:
+            print("Please enter a valid number.")
