@@ -4,9 +4,9 @@
 
 ## Student Management System
 
-A python program for managing student grades. Students can be added, updated, removed, searched, and compared through a simple numbered menu. This program is organised using functions with input validation and error handling techniques.
+This is a program created to manage student grades. Students can be added, updated, removed, searched, and compared through a simple numbered menu. This program  uses functions with input validation and error handling techniques.
 
-The program is an interactive system, the program loops on a main menu until the user chooses Exit.
+The program is an interactive system whereby the program loops on a main menu until the user chooses to Exit it.
 
 The menu option has the following:
 
@@ -24,9 +24,9 @@ The data structure for section D is a dictionary and the student names are keys 
 
 The use of a dictionary helps give fast lookups by name for search, update and remove, and keeps grades labelled by subject.
 
-## ERROR HANDLING:
+## ERROR HANDLING: For	non numeric  grade  input.
 
-To avoid errors whereby the user did not insert the right data type or value expected, the code is written using the try and exceptValue error, to make sure that the user inserts the right input. An example of where this is enforced is in the get_valid_grade function.
+To avoid errors whereby the user did not insert a numeric data type or value expected, the code is written using the try and exceptValue error, to make sure that the user inserts a numeric value. An example of where this is enforced is in the get_valid_grade function.
 
 ```python
 def get_valid_grade(student_name, subject):
@@ -40,3 +40,4 @@ def get_valid_grade(student_name, subject):
         except ValueError:
             print("Please enter a valid number.")
 ```
+
