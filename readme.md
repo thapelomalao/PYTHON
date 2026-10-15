@@ -40,4 +40,21 @@ def get_valid_grade(student_name, subject):
         except ValueError:
             print("Please enter a valid number.")
 ```
+## ERROR HANDLING: Provide error messages
+In instances whereby a user inputs the wrong data type, the program reiterates to allow them to change their input. The program then provides an error message to
+the user to explain why and where their error is so they can fix it. An example of where this is enforced is in the get_valid_grade function.
+A code snippet of this is here.
 
+```python
+def get_valid_grade(student_name, subject):
+    """function to get a validated grade from the user."""
+    while True:
+        try:
+            grade = float(input(f"Enter {student_name}'s grade for {subject} (0-100): "))
+            if 0 <= grade <= 100:
+                return grade
+            print("Grade must be between 0 and 100.")
+        except ValueError:
+            print("Please enter a valid number.")
+```
+In this code here if a user does not insert a valid number the program returns the message "Grade must be between 0 and 100.". That message helps provide information tho the user.
