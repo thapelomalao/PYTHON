@@ -54,4 +54,27 @@ The program handles errors safely without crashing, using these custom exception
 # METHODS
 There are methods used in the student class.An example of this is here; 
 
+```text
+class Student:
+    def __init__(self, firstname, lastname, mathgrade=None, sciencegrade=None, englishgrade=None):
+        self.firstname, self.lastname = check_name(firstname), check_name(lastname)
+        self.grades = dict(zip(SUBJECTS, map(check_grade, (mathgrade, sciencegrade, englishgrade))))
 
+    @property
+    def name(self):
+        return f"{self.firstname} {self.lastname}"
+
+    def add_grade(self, subject, grade):
+        if (g := check_grade(grade)) is None:
+            raise InvalidGradeError("A grade is required.")
+        self.grades[check_subject(subject)] = g
+
+    def average(self):
+        g = [x for x in self.grades.values() if x is not None]
+        return sum(g) / len(g) if g else 0        # No grades should be less than 0
+
+    def print_details(self):
+        marks = ", ".join(f"{s}: {'-' if g is None else f'{g:g}'}" for s, g in self.grades.items())
+        print(f"{self.name:<25} {marks} | average: 
+```
+The def add_grade(self, subject, grade),  def average(self) and def print_details(self) are methods found in the student Class.
