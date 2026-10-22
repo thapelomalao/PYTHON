@@ -19,7 +19,7 @@ profile data.
 • **Grade validation:** For the grade section only integers are accepted and the marks should be in the range of 0 to 10.
 
 
-**Error Handling**
+**Error Handling**:
 The program handles errors safely without crashing, using these custom exceptions that I enforced in the code.
 
 • **InvalidNameError**: It is shown or acts if a name is empty.
