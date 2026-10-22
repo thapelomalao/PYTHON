@@ -32,3 +32,22 @@ The program handles errors safely without crashing, using these custom exception
 
 • **DuplicateStudentError**: Comes into play if the user tries to add a student who is already in the system.
 
+
+# Menu Options
+
+• **Add Student**:	Creates a new profile and asks for grades. Rejects duplicate names immediately.
+
+• **Add grade**:	Updates or adds a score for an existing student.
+
+• **Remove**: Deletes a student profile using their full name.
+
+• **Search**: Finds students using a partial, case-insensitive name match.
+
+• **Sort name**: 	Sorts and displays the student list alphabetically from A to Z.
+
+• **Sort average**:  Sorts from highest to lowest average grade. Empty grades count as 0.
+
+• **Sort subject**:   Sorts from highest to lowest score in a specific subject. Missing grades are listed last.
+
+• **Exit**: 	Closes the program cleanly.
+
