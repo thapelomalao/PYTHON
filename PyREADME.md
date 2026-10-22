@@ -21,9 +21,14 @@ profile data.
 
 **Error Handling**
 The program handles errors safely without crashing, using these custom exceptions that I enforced in the code.
+
 • **InvalidNameError**: It is shown or acts if a name is empty.
+
 • **InvalidSubjectError**: It is shown and enacted if the subject isn't maths, science, or english.
+
 • **InvalidGradeError**: Comes into play if a grade inserted is outside the 0–100 range.
+
 • **StudentNotFoundError**: Comes into play if the user tries to look up or delete a name that doesn't exist inside of the Gradebook program.
+
 • **DuplicateStudentError**: Comes into play if the user tries to add a student who is already in the system.
 
