@@ -51,3 +51,7 @@ The program handles errors safely without crashing, using these custom exception
 
 • **Exit**: 	Closes the program cleanly.
 
+# METHODS
+There are methods used in the student class.An example of this is here; 
+
+
