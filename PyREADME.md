@@ -1,1 +1,2 @@
 # SECTION E+F README
+**PYTHON VERSION used:** 3.13 version
